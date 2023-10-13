@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+        font-family: 'Papyrus', cursive;
+        margin: 0;    
+}
+h1{ font-size:3.5em;}
+h2{ font-size: 2.7em;}
+h3{font-size: 2.5em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    font-family: 'Papyrus', cursive;
+    color: white;
+    background-color: rgb(223, 121, 121);
+}
+
+button:hover{
+    background-color: rgb(229, 170, 170);
+}
+.color-acento{
+    color:brown
+}
+
+header{
+    background-color: rgb(239, 230, 230);
+}
+
+.imagenlogo{
+    height: 15vh;
+    width: 15vw;
+    margin: 0;
+    padding:0;
+    cursor: pointer;   
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px;
+}
+
+header a{
+   padding: 5px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    border-radius: 15px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    background-color: rgb(223, 121, 121);
+   
+}
+
+header a:hover{
+    color:rgb(111, 106, 106);
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image:url("/img/menu_tortas.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+#inicio h1{
+   color: black;
+    font-weight: bold;
+    font-size: 4em;
+    
+
+}
+#inicio .container{
+    text-align: center;
+    height: 80vh;
+
+}
+
+#descripcion .container{
+    text-align: center;
+    padding: 150px 12px;
+    height: 100vh;
+
+}
+
+#Nuestrastortas{
+    background-color: rgb(223, 121, 121);
+    color: black;
+    text-align: center;
+
+}
+#Nuestrastortas .container{
+    padding: 50px;
+
+}
+#Nuestrastortas h2{
+    margin-top: 0;
+    font-weight: bold;
+}
+#Nuestrastortas p{
+    display: none;
+    font-weight: bold;
+}
+#Nuestrastortas .tipos{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.tipos:first-child{
+
+    background-image:url("/img/inicio_clasica.t.jpg");
+
+}
+.tipos:nth-child(2){
+    background-image:url("/img/tortas_3.jpg");
+
+}
+.tipos:nth-child(3){
+    background-image:url("/img/tortas_saladas_inicio.png");
+}
+
+
+#caracteristicas .container{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    
+}
+
+#caracteristicas .vinetas{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    max-width: 600px;
+    text-align: center;
+  display: flex;
+  flex-direction:center;
+  align-items: center;
+  
+  }
+
+
+#caracteristicas .video{
+    background-size: cover;
+    background-position: center center;
+     margin-right: 20px; 
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px ;
+    
+}
+
+#contactar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(223, 121, 121);
+    color: black;
+    height: 60vh;
+
+}
+#contactar a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer{
+    background-color: rgb(230,230,230);
+
+}
+
+.imagen-foter{
+    height: 6vh;
+    width: 6vw;
+    margin: 0;
+    padding:0;
+    margin: 20px;
+}
+
+footer p{
+    margin: 0;
+    padding: 15px;
+    color: rgb(100,100,100);
+    font-family: 'Roboto',sans-serif ;
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 25vh;
+   
+}
+
+#inicio-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image:url("/img/torta-casa-1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;   
+
+}
+
+#inicio-2 h1{
+   color: black;
+   font-weight: bold;   
+   font-size: 3em;
+
+}
+#inicio-2 .container{
+    text-align: center;
+    height: 80vh;
+}
+#inicio-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image:url("/img/inicio_clasica.t.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#inicio-3 h1{
+    color: black;
+    font-weight: bold; 
+    font-size: 3em;
+}
+
+#inicio-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image:url("/img/tortas_saladas_inicio.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inicio-4 h1{
+    color: black;
+    font-weight: bold; 
+    font-size: 3em;
+}
+
+#formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image:url("/img/menu_tortas22.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#formulario h1{
+    color: black;
+    font-weight: bold; 
+    font-size: 3em;
+   
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+#formSec {
+  margin: 2rem auto;
+  padding: 30px;
+  width: 400px;
+  background: #ffffff;
+  box-shadow: 3px 3px 10px rgba(1, 84, 166, 0.55);
+  border-radius: 10px;
+  line-height: 1;
+  color: black;
+  font-weight: bold; 
+  
+}
+
+ .form {
+  margin-bottom: 0.7rem;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.form-g{
+  display: flex;
+  margin: 20px 0;
+  align-items: flex-end;
+  
+
+}
+
+ label {
+  color: #3a3a3a;
+  font-size: 14px;
+}
+
+ input,
+ textarea {
+  box-shadow: none;
+  font-size: 15px;
+  background: rgba(196, 196, 196, 0.37);
+  border-radius: 10px;
+  border: rgba(196, 196, 196, 0.37);
+  line-height: 1;
+  margin-top: 10px;
+  padding: 5px;
+  
+}
+
+ select {
+  box-shadow: none;
+  font-size: 14px;
+  padding: 6px;
+  background: rgba(196, 196, 196, 0.37);
+  border-radius: 10px;
+  border: rgba(196, 196, 196, 0.37);
+  line-height: 1;
+  margin-top: 10px;
+}
+
+
+h1 {
+	font-size: 2em;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 1em;
+    
+}
+
+.enviar button {
+  border: none;
+  border-radius: 50px;
+	background: #163488;
+  width: 150px;
+  text-align: center;
+  display: none;
+  flex-direction: row;
+  justify-content: center ;
+  margin: 30px auto 0;
+	padding: 10px 0;
+	font: inherit;
+	color: #ecf0f1;
+  font-weight: 500;
+  cursor: pointer;
+}

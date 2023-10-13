@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+ -->
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    
+</head>
+<body>
+
+  <section id="formulario">
+    <div class="container">
+        <div class="casa">
+            <a href="../inicio.html"><img src="/img/logoCaC2.png" class="imagenlogo"></a>
+            </div>
+    <h1>Contacto</h1>
+    </div>
+</section>
+
+  <section id="formSec">
+    <form action="#" id="registration">
+      <h1>Registro de Usuario</h1>
+      <ul id="error-ul">
+
+      </ul>
+
+      <div class="form">
+        <label for="name">Nombre:</label>
+        <div id="error-name">
+
+        </div>
+        <input type="text" id="name" name="name"  onkeyup="validate()"/>
+      </div>
+
+      <div class="form">
+        <label for="password1">Contraseña:</label>
+        <div id="error-password1">
+
+        </div>
+        <input type="password" id="password1" name="password1"  onkeyup="validate()"/>
+      </div>
+
+      <div class="form">
+        <label for="password2">Confirme su Contraseña:</label>
+        <div id="error-password2">
+
+        </div>
+        <input type="password" id="password2" name="password2"  onkeyup="validate()"/>
+      </div>
+      <div class="form">
+        <div id="error-gender">
+
+        </div>
+        <div class="form-g">
+          <input type="radio" id="genderM" name="gender" value="male"  onclick="validate()"/>
+          <div id="error-genderM">
+  
+          </div>
+          <label for="genderM">Masculino</label>
+        </div>
+  
+        <div class="form-g">
+          <input type="radio" id="genderF" name="gender" value="female"  onclick="validate()" />
+          <label for="genderF">Femenino</label>
+        </div>
+
+        <div >
+          <button type="submit" id="submit" class="enviar" >Enviar!</button>
+        </div>
+      </div>
+      
+
+    </form>
+  </section>
+
+      <script src="/js/form.js"></script>
+      <footer>
+        <div class="container">
+            <div><img class="imagen-foter" src="/img/instagram.png"></div>
+            <div><img class="imagen-foter" src="/img/facebook.png"></div>
+            <p>&copy; Sabor a Mi 2023</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
