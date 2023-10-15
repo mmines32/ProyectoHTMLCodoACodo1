@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -6,6 +7,10 @@ body{
         font-family: 'Papyrus', cursive;
         margin: 0;    
 }
+
+
+
+   
 h1{ font-size:3.5em;}
 h2{ font-size: 2.7em;}
 h3{font-size: 2.5em;}
@@ -145,34 +150,32 @@ header a:hover{
 
 #caracteristicas .container{
     display: flex;
-    justify-content: space-evenly;
-    
-
-    
+    justify-content: space-evenly;  
+    flex-direction:row;
 }
+    
 
 #caracteristicas .vinetas{
     background-position: center center;
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    max-width: 600px;
+    max-width: 400px;
     text-align: center;
-  display: flex;
-  flex-direction:center;
   align-items: center;
+  display:flex;
   
   }
 
-
 #caracteristicas .video{
     background-size: cover;
-    background-position: center center;
+    background-position: center;
      margin-right: 20px; 
     margin-bottom: 20px;
     border-radius: 20px;
     padding: 10px ;
-    
+   display:flex;
+
 }
 
 #contactar{
@@ -225,7 +228,7 @@ footer .container{
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     height: 50vh;
     background-image:url("/img/torta-casa-1.jpg");
     background-repeat:no-repeat;
@@ -305,7 +308,8 @@ footer .container{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 
 #formSec {
   margin: 2rem auto;
