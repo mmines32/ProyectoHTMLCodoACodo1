@@ -11,7 +11,7 @@ body{
 
 
    
-h1{ font-size:3.5em;} Contacto
+h1{ font-size:3.5em;} 
 h2{ font-size: 2.7em;}
 h3{font-size: 2.5em;}
 p{font-size: 1.25em;}
@@ -81,7 +81,7 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 80vh;
-    background-image:url("/img/menu_tortas.jpg");
+    background-image:url("../img/menu_tortas.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -146,15 +146,15 @@ header a:hover{
 
 .tipos:first-child{
 
-    background-image:url("/img/inicio_clasica.t.jpg");
+    background-image:url("../img/inicio_clasica.t.jpg");
 
 }
 .tipos:nth-child(2){
-    background-image:url("/img/tortas_3.jpg");
+    background-image:url("../img/tortas_3.jpg");
 
 }
 .tipos:nth-child(3){
-    background-image:url("/img/tortas_saladas_inicio.png");
+    background-image:url("../img/tortas_saladas_inicio.png");
 }
 
 
@@ -249,7 +249,7 @@ footer .container{
     text-align: center;
     flex-direction: column;
     height: 50vh;
-    background-image:url("/img/torta-casa-1.jpg");
+    background-image:url("../img/torta-casa-1.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;   
@@ -306,7 +306,7 @@ footer .container{
     text-align: center;
     flex-direction: column;
     height: 50vh;
-    background-image:url("/img/inicio_clasica.t.jpg");
+    background-image:url("../img/inicio_clasica.t.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -326,7 +326,7 @@ footer .container{
     text-align: center;
     flex-direction: column;
     height: 50vh;
-    background-image:url("/img/tortas_saladas_inicio.png");
+    background-image:url("../img/tortas_saladas_inicio.png");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -345,7 +345,7 @@ footer .container{
     text-align: center;
     flex-direction: column;
     height: 50vh;
-    background-image:url("/img/menu_tortas22.jpg");
+    background-image:url("../img/menu_tortas22.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -474,7 +474,7 @@ h1 {
          margin-right: 2px; 
         border-radius: 0px;
         padding: 5px ;
-        height: 120vh;
+        height: 130vh;
         width: 2vw;
     }
      
@@ -493,5 +493,38 @@ h1 {
 header a{
     font-size: 2.5vw;
  }
+ #descripcion-2 .container{
+    text-align: center;
+    padding: 30px 10px;
+    height: 110vh;
+    margin: 40px;
+
+}
+#descripcion-2 h2{
+    font-size: 2.5em;
+}
+
+#pagina-torta .container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f78da7;
+}
+#pagina-torta .descripcion-torta{
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    height: 100vh;
+    width: 50vw;
+}
+#pagina-torta .imagen-2{
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    height: 90vh;
+    width: 40vw;
+    margin: 10px;}
 
 }
