@@ -4,79 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
- -->
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/styles.css">
-
- 
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
-<body>
 
+<body>
   <section id="formulario">
     <div class="container">
         <div class="casa">
             <a href="../index.html"><img src="./img/logoCaC2.png" class="imagenlogo"></a>
         </div>
     </div>
-</section>
-
-<section id="descripcion-contacto">
-  <div class="container">
-      <h2>Contactanos!</h2>
-      <div><img class="imagen-linea" src="./img/linea.png"></div>
-      </div>
   </section>
 
   <section id="formSec">
-    <form action="#" id="registration">
+    
+    <form action="https://sheetdb.io/api/v1/0ex9xscr5uwp6" method="POST" id="sheetdb-form">
       <h1>Envianos un mensaje</h1>
-      <ul id="error-ul">
-
-      </ul>
-
+      
       <div class="form">
         <label for="name">Nombre y Apellido:</label>
-        <div id="error-name">
-
-        </div>
-        <input type="text" id="name" name="name"  onkeyup="validate()"/>
+        <div id="error-name"></div>
+        <input type="text" id="name" name="data[name]"  onkeyup="validate()"/>
       </div>
 
       <div class="form">
         <label for="email">Email:</label>
-        <div id="error-email">
-
-        </div>
-        <input type="email" id="email" name="email"  onkeyup="validate()"/>
+        <div id="error-email"></div>
+        <input type="email" id="email" name="data[email]"  onkeyup="validate()"/>
       </div>
 
       <div class="form">
         <label for="comentario">Comentario:</label>
-        <div id="error-comentario">
-
-        </div>
-        <textarea id="comentario" name="comentario"  rows="10" onkeyup="validate()"></textarea>
+        <div id="error-comentario"></div>
+        <textarea id="comentario" name="data[comentario]"  rows="10" onkeyup="validate()"></textarea>
       </div>
     
-        <div >
-          <button type="submit" id="submit" class="enviar" >Enviar!</button>
-        </div>
+      <div >
+        <button type="submit" id="submit" class="enviar" >Enviar!</button>
       </div>
-      
 
     </form>
   </section>
 
-      <script src="/js/form.js"></script>
-      <footer>
-        <div class="container">
-            <div><img class="imagen-foter" src="./img/instagram.png"></div>
-            <div><img class="imagen-foter" src="./img/facebook.png"></div>
-            <p>&copy; Sabor a Mi 2023</p>
-        </div>
+  <script src="./js/form.js"></script>
+    <footer>
+      <div class="container">
+        <div><img class="imagen-foter" src="./img/instagram.png"></div>
+        <div><img class="imagen-foter" src="./img/facebook.png"></div>
+        <p> Sabor a Mi &copy; 2023</p>
+      </div>
     </footer>
-    
-</body>
+
+
+  </body>
 </html>

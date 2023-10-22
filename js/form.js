@@ -60,7 +60,7 @@ function validate() {
 
 btn.onclick = function submit() {
 
-	window.alert('Registro concluido con Éxito');
+	window.alert('Su comentario fue enviado con éxito');
   window.reload()
 	return true;
 }

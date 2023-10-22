@@ -58,6 +58,7 @@ header .container {
     align-items: center;
     justify-content:space-between;
     margin: 10px;
+    height: 85px;
 }
 
 header a{
@@ -82,7 +83,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     background-image:url("../img/menu_tortas.jpg");
     background-repeat:no-repeat;
     background-size:cover; 
@@ -101,7 +102,6 @@ header a:hover{
 #inicio .container{
     text-align: center;
     height: 50vh;
-    padding-top: 100px;
 
 }
 
@@ -223,11 +223,11 @@ footer{
 }
 
 .imagen-foter{
-    height: 5vh;
-    width: 5vw;
+    height: 3vh;
+    width: 3vw;
     margin: 0;
-    padding:0;
-    margin: 20px;
+    padding-top:3px;
+    margin: 10px;
 }
 
 footer p{
