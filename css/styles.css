@@ -40,6 +40,8 @@ button:hover{
 
 header{
     background-color: rgb(239, 230, 230);
+    position: fixed;
+    width: 100%;
 }
 
 .imagenlogo{
@@ -83,7 +85,7 @@ header a:hover{
     height: 80vh;
     background-image:url("../img/menu_tortas.jpg");
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size:cover; 
     background-position: center center;
     
 
@@ -98,7 +100,8 @@ header a:hover{
 }
 #inicio .container{
     text-align: center;
-    height: 80vh;
+    height: 50vh;
+    padding-top: 100px;
 
 }
 
@@ -434,17 +437,14 @@ h1 {
   border: none;
   border-radius: 50px;
 	background: #163488;
-  width: 150px;
   text-align: center;
   display: none;
-  flex-direction: row;
+  flex-direction: center;
   justify-content: center ;
-  margin: 30px auto 0;
 	padding: 10px 0;
 	font: inherit;
 	color: #ecf0f1;
-  font-weight: 500;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 
