@@ -50,8 +50,16 @@ header{
     margin: 0;
     padding:0;
     cursor: pointer;   
+    animation:girar 7s linear infinite;
 }
-
+@keyframes girar {
+    form {
+      transform:rotateY(180deg)  
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
 header .container {
     display: flex;
     flex-direction: row;
