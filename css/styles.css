@@ -5,14 +5,24 @@
 
 body{
     font-family: 'papyrus', cursive;
-        margin: 0;    
+        margin: 0; 
+        background: url("../img/cakes-fondo1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 88%;
+        margin: auto;
+           
 }
 
 .contenedor {
-    
     display: grid;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     grid-template-columns: repeat(3,1fr);
-
 }
    
 h1{ font-size:3.5em;} 
@@ -22,32 +32,44 @@ p{font-size: 1.25em;}
 ul{list-style: none;}
 li{font-size: 1.25em;}
 
-button{
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    font-family: 'Papyrus', cursive;
-    color: white;
-    background-color: #f78da7;
-    cursor: pointer;
-}
 
-button:hover{
-    background-color:#f3c9d4;
-}
 .color-acento{
     color:#f78da7;
 }
 
-header{
+#navbar{
     background-color: rgb(239, 230, 230);
     position: fixed;
-    width: 100%;
+    width: 88%;
+    margin:auto;
+    padding: 0px 10px;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 85px;
+    border-right: 2px solid rgba(0,0,0,0.3);
+    box-shadow: right 2px 2px 10px rgba(0,0,0,0.5);
     grid-column: 1/4;
 }
+
+header a{
+    padding: 5px 12px;
+     font-weight: bold;
+     text-decoration: none;
+     color:black;
+     border-radius: 15px;
+     border: 2px solid rgba(0,0,0,0.3);
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+     background-color: #f78da7;
+    
+ }
+ 
+ header a:hover{
+     color:rgb(111, 106, 106);
+ }
+
 .imagenlogo1{
     height: 15vh;
     width: 15vw;
@@ -55,22 +77,8 @@ header{
     padding:0;
 }
 
-.imagenlogo{
-    height: 15vh;
-    width: 15vw;
-    margin: 0;
-    padding:0;
-    cursor: pointer;   
-    animation:girar 7s linear infinite;
-}
-@keyframes girar {
-    form {
-      transform:rotateY(180deg)  
-    }
-    to{
-        transform: rotateY(360deg);
-    }
-}
+
+
 header .container {
     display: flex;
     flex-direction: row;
@@ -131,13 +139,15 @@ header a:hover{
 }
 #descripcion {
     grid-column: 1/4;
+    background-color: beige;
 }
 
 #descripcion h2{
     font-size: 4vw;   
 }
 #descripcion p{
-    font-size: 2vw;   
+    font-size: 2vw;  
+    text-align: center;  
 }
 
 #descripcion .container{
@@ -150,7 +160,7 @@ header a:hover{
 }
 .imagen-linea{
     height: 15vh;
-    width: 60vw;
+    width: 70vw;
     margin: 0;
     padding: 0;
 }
@@ -163,7 +173,7 @@ header a:hover{
 
 }
 #Nuestrastortas .container{
-    padding: 40px;
+    padding: 20px;
 
 }
 #Nuestrastortas h2{
@@ -193,9 +203,47 @@ header a:hover{
 .tipos:nth-child(3){
     background-image:url("../img/tortas_saladas_inicio.png");
 }
+.tipos{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    cursor: pointer;
+    /*--transform: rotate(-90deg);*/
+}
+
+.tipos:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   /* --transform: rotate(0);*/
+}
+
+
+.desplegable{
+    clip-path: var(--clip);
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   
+
+}
+
+.desplegable{
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+    background-color: #f78da7;
+    z-index: 1;
+
+}
 
 #caracteristicas {
 grid-column: 1/3;
+background-color: beige;
 height: 100%;
 width: 100%;
 }
@@ -222,6 +270,7 @@ grid-column: 3/4;
 padding: 10px;
 width:100%;
 height: 100%;
+background-color: beige;
 }
 
 .video1 {
@@ -265,13 +314,13 @@ justify-content:space-between;
 } 
 
 footer{
-    background-color: rgb(230,230,230);
+    background-color: grey;
     grid-column: 1/4;
 }
 
 .imagen-foter{
-    height: 3vh;
-    width: 3vw;
+    height: 2.1vw;
+    width: 2.1vw;
     margin: 0;
     padding-top:3px;
     margin: 10px;
@@ -280,7 +329,7 @@ footer{
 footer p{
     margin: 0;
     padding: 15px;
-    color: rgb(100,100,100);
+    color: white;
     font-family: 'Roboto',sans-serif ;
 }
 footer .container{
@@ -291,27 +340,12 @@ footer .container{
    
 }
 
-#inicio-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 50vh;
-    background-image:url("../img/torta-casa-1.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center center;   
+
+#descripcion-2{
     grid-column: 1/4;
 
 }
 
-#inicio-2 .casa{
-  text-align: center;
-  height: 100%;
-  width: 100%;
-
-}
 #descripcion-2 h2{
 font-size: 4vw;
 }
@@ -322,10 +356,10 @@ font-size: 4vw;
 
 #descripcion-2 .container{
     text-align: center;
-    padding: 80px 10px;
+    padding: 10%;
     height: 100%;
     width: 100%;
-    margin: 10px;
+    background-color: beige;
 
 }
 #pagina-torta {
@@ -338,7 +372,7 @@ font-size: 4vw;
     background-color: #f78da7;
     width: 100%;
     flex-direction: row;
-    padding: 20px;
+    padding: 8%;
     align-items: center;
     justify-content:space-between;
 }
@@ -361,50 +395,12 @@ font-size: 2vw;
 }
 
 .imagen-2{
-    padding: 20px 10px;
+    padding: 2px;
     height: 60vh;
-    width: 50vw;
-}
-#inicio-3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 50vh;
-    background-image:url("../img/inicio_clasica.t.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-column: 1/4;
-
+    width: 40vw;
 }
 
-#inicio-3 h1{
-    color: black;
-    font-weight: bold; 
-    font-size: 3em;
-}
 
-#inicio-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 50vh;
-    background-image:url("../img/tortas_saladas_inicio.png");
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-column: 1/4;
-}
-
-#inicio-4 h1{
-    color: black;
-    font-weight: bold; 
-    font-size: 3em;
-}
 
 #formulario{
     display: flex;
@@ -432,8 +428,31 @@ font-size: 2vw;
 
 }
 
+.fondoformu{
+    background-color: beige;
+    grid-column: 1/4;
+
+}
+
+#navbar-f{
+    background-color: rgb(239, 230, 230);
+    position: fixed;
+    width: 88%;
+    margin:auto;
+    padding: 0px 10px;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 85px;
+    border-right: 2px solid rgba(0,0,0,0.3);
+    box-shadow: right 2px 2px 10px rgba(0,0,0,0.5);
+    grid-column: 1/4;
+}
+
 #formSec {
-  margin: 2rem auto;
+  margin: auto;
   padding: 30px;
   width: 300px;
   background: #ffffff;
@@ -499,6 +518,27 @@ h1 {
     
 }
 
+button{
+
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    font-family: 'Papyrus', cursive;
+    color: white;
+    background-color: #f78da7;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color:#f3c9d4;
+}
+
+
+
 
 /* Teléfonos */
 @media screen and (max-width: 500px){
@@ -506,6 +546,19 @@ h1 {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    #navbar nav a{
+        font-size: 9.5px;
+        position:flex;
+        margin:1px;
+        padding: 3px;
+        
+     }
+     
+     header a:hover{
+         color:rgb(111, 106, 106);
+     }
+
     #inicio h1{
         color: black;
         font-weight: bold;
@@ -513,10 +566,10 @@ h1 {
     }
 
     #descripcion h2{
-        font-size: 9vw;
+        font-size: 7vw;
     }
     #descripcion p{
-    font-size: 6vw;
+    font-size: 4vw;
     }
     #video {
         grid-column: 1/4;
@@ -529,36 +582,46 @@ h1 {
         grid-column: 1/4;
     }
     .vinetas h3{
-        font-size: 9vw;  
+        font-size: 7vw;  
     }
     .vinetas li{
-        font-size: 6vw;
-        line-height: 2em;
+        font-size: 4vw;
+        line-height: 1.5em;
     }
+    #descripcion-2 .container{
+        text-align: center;
+        padding: 30px 10px;
+        height: 100%;
+        width: 100%;
+        background-color: beige;
+    
+    }
+
     #descripcion-2 h2{
-    font-size: 9vw;
+    font-size: 6vw;
     }
     #descripcion-2 p{
-        font-size: 6vw;
+        font-size: 4vw;
     }
     #pagina-torta .container{
         flex-direction: column;
         background-color: #f78da7;
         width: 100%;
         margin: auto;
+        padding: 10px 10px;
     }
     .descripcion-torta p{
-        font-size: 6vw;
+        font-size: 4vw;
         height: auto;
         width: auto;
         padding: 2px;
 }
 .descripcion-torta h3{
-font-size: 9vw;
+font-size: 6vw;
 }
 .imagen-2 {
-    padding: 20px 10px;
-    height: 60vh;
+    padding: 10px 10px;
+    height: 50vh;
     width: 90vw; 
 }
 #contactar .container{
@@ -569,7 +632,7 @@ font-size: 9vw;
 }
 
 .direccion h3{
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 10px;
     }
 .direccion p{
@@ -588,39 +651,45 @@ font-size: 9vw;
 .mapa {
     padding: 20px 10px;
     height: 50vh;
-    width: 90vw;
+    width: 80vw;
 }  
+#Nuestrastortas .container{
+    padding:5px;
+    }
+
 #Nuestrastortas h2{
-font-size: 9vw;
+font-size: 7vw;
 font-weight: bold;
         
 }
  .varios_tipos h3{
-font-size: 8vw;
+font-size: 6vw;
 font-weight: bold;
 }
 
  button {
-font-size: 2.1em;
+font-size: 1.5em;
 font-weight: bold;
 }
-header a{
-font-size: 11px;
-position: flex;
-margin: 2px 1px;
-      
- }
+
+#navbar-f a{
+    font-size: 9.5px;
+    position:flex;
+    margin:3px;
+    padding: 5px 5px;
+  }
+
  .imagen-linea{
 height: 15vh;
-width: 80vw;
+width: 60vw;
 margin: 0px;
 padding: 0px;
     } 
     .imagen-foter{
-        height: 4vh;
-        width: 4vw;
+        height: 3.8vh;
+        width: 3.8vw;
         margin: 0;
         padding-top:3px;
-        margin: 10px;
+        margin: 8px;
     }     
 }
